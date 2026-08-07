@@ -1,0 +1,3 @@
+iverilog -o ouroboros_sim hardware/latsr_cim_cell.v hardware/latsr_bist.v simulation/tb_top.v
+
+vvp ouroboros_sim

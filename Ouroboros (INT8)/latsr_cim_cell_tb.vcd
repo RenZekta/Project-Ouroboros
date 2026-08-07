@@ -1,0 +1,421 @@
+$date
+	Fri Aug  7 19:22:06 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module latsr_cim_cell_tb_sim $end
+$var wire 1 ! test_fail $end
+$var wire 1 " test_done $end
+$var reg 1 # clk $end
+$var reg 1 $ rst_n $end
+$scope module u_tb $end
+$var wire 1 # clk $end
+$var wire 1 $ rst_n $end
+$var wire 1 ! test_fail $end
+$var wire 1 " test_done $end
+$var wire 8 % selected_weight [7:0] $end
+$var wire 16 & accum_out [15:0] $end
+$var parameter 6 ' PH_CHECK_HOLD_RELEASE_STALL $end
+$var parameter 6 ( PH_CHECK_HOLD_SWITCH_CONTEXT $end
+$var parameter 6 ) PH_CHECK_HOLD_WRITE_DONE $end
+$var parameter 6 * PH_CHECK_HOLD_WRITE_SLOT2 $end
+$var parameter 6 + PH_CHECK_PRE_STALL_ASSERT_STALL $end
+$var parameter 6 , PH_CHECK_RELEASED_DRIVE_RESERVED $end
+$var parameter 6 - PH_CHECK_RESERVED $end
+$var parameter 6 . PH_CHECK_SLOT1_DRIVE_SLOT2 $end
+$var parameter 6 / PH_CHECK_SLOT2_DRIVE_SLOT3 $end
+$var parameter 6 0 PH_CHECK_SLOT3_DRIVE_SLOT1_T7 $end
+$var parameter 6 1 PH_DONE $end
+$var parameter 6 2 PH_DRIVE_SLOT1_TOKEN4 $end
+$var parameter 6 3 PH_IDLE $end
+$var parameter 6 4 PH_PROTECT_ACTIVE_WRITE $end
+$var parameter 6 5 PH_PROTECT_ACTIVE_WRITE_DONE $end
+$var parameter 6 6 PH_SET_ACTIVE_SLOT1 $end
+$var parameter 6 7 PH_SET_ACTIVE_SLOT2 $end
+$var parameter 6 8 PH_WRITE_SLOT1 $end
+$var parameter 6 9 PH_WRITE_SLOT1_DONE $end
+$var parameter 6 : PH_WRITE_SLOT2 $end
+$var parameter 6 ; PH_WRITE_SLOT2_DONE $end
+$var parameter 6 < PH_WRITE_SLOT3 $end
+$var parameter 6 = PH_WRITE_SLOT3_DONE $end
+$var reg 1 > fail_q $end
+$var reg 8 ? input_token [7:0] $end
+$var reg 6 @ phase [5:0] $end
+$var reg 2 A slot_select [1:0] $end
+$var reg 1 B step_delay_stall $end
+$var reg 8 C weight_data_in [7:0] $end
+$var reg 2 D weight_slot_target [1:0] $end
+$var reg 1 E weight_write_en $end
+$scope module dut $end
+$var wire 1 # clk $end
+$var wire 1 F compute_en $end
+$var wire 8 G input_token [7:0] $end
+$var wire 1 $ rst_n $end
+$var wire 2 H slot_select [1:0] $end
+$var wire 1 B step_delay_stall $end
+$var wire 8 I weight_data_in [7:0] $end
+$var wire 2 J weight_slot_target [1:0] $end
+$var wire 1 E weight_write_en $end
+$var wire 8 K weight_to_mult [7:0] $end
+$var wire 8 L token_to_mult [7:0] $end
+$var wire 8 M selected_weight [7:0] $end
+$var wire 16 N mult_product [15:0] $end
+$var wire 2 O active_slot [1:0] $end
+$var reg 16 P accum_out [15:0] $end
+$var reg 8 Q weight_slot_1 [7:0] $end
+$var reg 8 R weight_slot_2 [7:0] $end
+$var reg 8 S weight_slot_3 [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b101 =
+b100 <
+b1000 ;
+b111 :
+b11 9
+b10 8
+b1 7
+b110 6
+b1010 5
+b1001 4
+b0 3
+b1011 2
+b10110 1
+b1110 0
+b1101 /
+b1100 .
+b10101 -
+b10100 ,
+b1111 +
+b10000 *
+b10001 )
+b10010 (
+b10011 '
+$end
+#0
+$dumpvars
+b0 S
+b0 R
+b0 Q
+b0 P
+b0 O
+b0 N
+b0 M
+b0 L
+b0 K
+b0 J
+b0 I
+b0 H
+b0 G
+1F
+0E
+b0 D
+b0 C
+0B
+b0 A
+b0 @
+b0 ?
+0>
+b0 &
+b0 %
+0$
+0#
+0"
+0!
+$end
+#5000
+1#
+#10000
+0#
+#15000
+1#
+#20000
+0#
+#25000
+1#
+#30000
+0#
+#35000
+1#
+#40000
+0#
+#45000
+1#
+#50000
+1$
+0#
+#55000
+b1 O
+b1 A
+b1 H
+b1 @
+1#
+#60000
+0#
+#65000
+1E
+b11 C
+b11 I
+b1 A
+b1 H
+b10 @
+1#
+#70000
+0#
+#75000
+0E
+b0 C
+b0 I
+b1 A
+b1 H
+b11 Q
+b11 @
+1#
+#80000
+0#
+#85000
+1E
+b101 C
+b101 I
+b10 D
+b10 J
+b1 A
+b1 H
+b100 @
+1#
+#90000
+0#
+#95000
+0E
+b0 D
+b0 J
+b0 C
+b0 I
+b1 A
+b1 H
+b101 S
+b101 @
+1#
+#100000
+0#
+#105000
+b11 K
+b11 %
+b11 M
+b0 O
+b0 A
+b0 H
+b110 @
+1#
+#110000
+0#
+#115000
+1E
+b11111110 C
+b11111110 I
+b1 D
+b1 J
+b111 @
+1#
+#120000
+0#
+#125000
+0E
+b0 D
+b0 J
+b0 C
+b0 I
+b1000 @
+b11111110 R
+1#
+#130000
+0#
+#135000
+1E
+b1001 C
+b1001 I
+b1001 @
+1#
+#140000
+0#
+#145000
+0E
+b0 C
+b0 I
+b1010 @
+1#
+#150000
+0#
+#155000
+b1100 N
+b100 L
+b100 ?
+b100 G
+b1011 @
+1#
+#160000
+0#
+#165000
+b1111111111111000 N
+b11111110 K
+b11111110 %
+b11111110 M
+b1 O
+b1 A
+b1 H
+b100 ?
+b100 G
+b1100 @
+b1100 &
+b1100 P
+1#
+#170000
+0#
+#175000
+b10100 N
+b101 K
+b101 %
+b101 M
+b10 O
+b100 ?
+b100 G
+b10 A
+b10 H
+b1111111111111000 &
+b1111111111111000 P
+b1101 @
+1#
+#180000
+0#
+#185000
+b11 K
+b11 %
+b11 M
+b10101 N
+b111 L
+b0 O
+b111 ?
+b111 G
+b0 A
+b0 H
+b1110 @
+b10100 &
+b10100 P
+1#
+#190000
+0#
+#195000
+b0 L
+b0 N
+b0 K
+0F
+1B
+b111 ?
+b111 G
+b10101 &
+b10101 P
+b1111 @
+1#
+#200000
+0#
+#205000
+1E
+b11111100 C
+b11111100 I
+b1 D
+b1 J
+1B
+b111 ?
+b111 G
+b10000 @
+1#
+#210000
+0#
+#215000
+1B
+0E
+b0 D
+b0 J
+b0 C
+b0 I
+b111 ?
+b111 G
+b11111100 R
+b10001 @
+1#
+#220000
+0#
+#225000
+b11111100 %
+b11111100 M
+b1 O
+b1 A
+b1 H
+1B
+b1010 ?
+b1010 G
+b10010 @
+1#
+#230000
+0#
+#235000
+b1111111111011000 N
+b1010 L
+b11111100 K
+1F
+0B
+b1010 ?
+b1010 G
+b1 A
+b1 H
+b10011 @
+1#
+#240000
+0#
+#245000
+b11 K
+b11 %
+b11 M
+b1100 N
+b100 L
+b0 O
+b100 ?
+b100 G
+b11 A
+b11 H
+b10100 @
+b1111111111011000 &
+b1111111111011000 P
+1#
+#250000
+0#
+#255000
+b100 ?
+b100 G
+b11 A
+b11 H
+b1100 &
+b1100 P
+b10101 @
+1#
+#260000
+0#
+#265000
+b0 N
+b0 L
+b0 ?
+b0 G
+b0 A
+b0 H
+1"
+b10110 @
+1#
+#270000
+0#
