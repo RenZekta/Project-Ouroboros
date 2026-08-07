@@ -82,21 +82,21 @@ To balance the trade-offs between mathematical precision, silicon area, and powe
 * **Target Market:** Enterprise Data Centers, AI Research Labs, Premium Workstations.
 * **Core Architecture:** Digital-CIM (Compute-in-Memory) with ultra-compact, dedicated Floating-Point Units (FPUs) embedded directly within each node.
 * **Shadow Slots:** 2 to 4 high-density registers per synapse.
-* **The Pitch:** Zero compromise on intelligence. Direct native compatibility with pre-trained open-weight models without complex post-training quantization. Ideal for multi-turn recursive reasoning where cumulative rounding errors must be mathematically eliminated.
+* **The Pitch:** Best intelligence preservation: no INT8 transformation means the weights are kept as they are. Ideal for multi-turn recursive reasoning where cumulative rounding errors must be mathematically eliminated.
 
 ### 2. Ouroboros (The Mass Market Standard)
 * **Data Format:** INT8 / INT4 (Integer).
 * **Target Market:** Mainstream PC users, local business servers, independent developers.
-* **Core Architecture:** Analog-Digital Hybrid CIM. Utilizes modified 8T/10T-SRAM cell structures where matrix multiplication is calculated directly via controlled current flow (Ohm's & Kirchhoff's laws).
+* **Core Architecture:** Analog-Digital Hybrid CIM. Utilizes modified 8T/10T-SRAM cell structures where matrix multiplication is calculated directly via controlled current flow in memory (Ohm's & Kirchhoff's laws).
 * **Shadow Slots:** 4 to 8 volatile registers per synapse.
-* **The Pitch:** The perfect price-to-performance sweet spot. While requiring a fast quantization step (via GPTQ/AWQ), it offers unmatched token-generation speed (15,000+ tok/s base) and high shadow-register density within a standard consumer chip size.
+* **The Pitch:** The perfect price-to-performance sweet spot. While requiring a fast quantization step (via GPTQ/AWQ), it offers unmatched token-generation speed (15,000+ tok/s base) and high shadow-register density within a standard consumer chip size, making intelligent models affordable.
 
 ### 3. Ouroboros Nano (The Edge AI Concept)
 * **Data Format:** 1.58-bit Ternary Weights (Values: -1, 0, 1), inspired by architectures like BitNet and Bonsai 27B.
 * **Target Market:** Smartphones, Smartwatches, Autonomous Drones, IoT Smart Home systems.
-* **Core Architecture:** Arithmetic-Free Logic. Because weights are purely ternary, the hardware completely eliminates the need for power-hungry multipliers. The entire computational node is stripped down to simple addition/subtraction circuits and signal gating.
+* **Core Architecture:** Arithmetic-Free Logic. Because weights are purely ternary, the hardware completely eliminates the need for power-using multipliers. The entire computational node is stripped down to simple addition/subtraction circuits and signal gating.
 * **Shadow Slots:** 10 to 30+ micro-registers per synapse due to reduced even further down silicon footprint per weight.
-* **The Pitch:** Infinite offline autonomy. It brings specialized, highly-efficient "expert networks" directly to wearable devices, operating at ыsmallest possible power levels.
+* **The Pitch:** Infinite offline autonomy. It brings specialized, highly-efficient "expert networks" directly to wearable devices, operating at smallest possible power levels with flasing speed.
 
 ## Repository Roadmap
 - [x] `/hardware` : Verilog/RTL implementation of a single CIM cell with 3-slot multiplexed shadow registers (`latsr_cim_cell.v`).
