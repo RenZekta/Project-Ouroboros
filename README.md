@@ -45,16 +45,16 @@ The core software-hardware interface of Project Ouroboros is **LAST-R** (**L**ay
 Each physical computational node contains a hardware "revolver cylinder" holding **3 to 10 (or any designed amount of) local Shadow Registers**. While the chip is executing tasks using *Slot 1 (General Assistant)*, the background bus (PCIe 5.0 / HBM) can lazily update *Slot 3* with new weights from an SSD. Switching between active slots is done via hardware multiplexers in **picoseconds**.
 
 ### 2. Temporal Weight Multiplexing (Recursive)
-Instead of building a massive, expensive 70B physical chip, Ouroboros uses can use a way smaller base model. Let's use the same Llama 3.1 8B as an example: to achieve the reasoning depth of a 70B model, the token signal is passed through the same 8B physical matrix **recursively multiple times**. 
-On each pass, the shadow registers instantly flip to the next set of weights. We trade a fraction of our extreme speed to potentially get **a manyfold highier level of intelligence out of capacity of a cheap consumer chip**. With photonic multi-chip designs, way larger models can bu used as a base, massively increasing any model's intelligence potential with such setup.
+Instead of building a massive, expensive physical chips, Ouroboros can use a way smaller base model. Let's use the same Llama 3.1 8B as an example: to achieve the reasoning depth of a 70B model, the token signal is passed through the same 8B physical matrix 9 times with different weights each time, changing them on each computational layer per tick.
+On each pass, the shadow registers instantly flip to the next set of weights. We trade a fraction of our extreme speed to potentially get **a manyfold highier level of intelligence out of capacity of a cheap consumer chip**. With photonic multi-chip designs, way larger models can bu used as a base, massively increasing any model's intelligence potential with such setup, allowing now fast bigger models to multiply intelligence the same way.
 
 ### 3. Layer-Aware Training (LAT)
-To prevent the model from hallucinating during recursive loops, models must be trained using **Layer-Aware Training**. Each slot's weights are trained end-to-end to accept and stabilize the exact mathematical distribution output by the previous internal cycle pass.
+To prevent the model from hallucinating during recursive loops, models must be trained using **Layer-Aware Training**. Each slot's weights in this use case are trained end-to-end to accept and stabilize the exact mathematical distribution output by the previous internal cycle pass.
 
 ---
 
 ## Thermal Mitigation: Microarchitectural Step Delay
-Operating at a 100% duty cycle with persistent weight flipping causes severe thermal stress. To combat this without relying on exotic liquid nitrogen cooling in consumer devices, Project Ouroboros implements a **Step Delay** (microarchitectural thermal throttling). The compiler automatically inserts calculated NOP (No-Operation) clock cycles between intense recursive passes, allowing built-in diamond substrates to dissipate heat effectively.
+Operating at a 100% duty cycle with persistent weight flipping may cause severe thermal stress. To combat this, Project Ouroboros implements a **Step Delay** (microarchitectural thermal throttling). The compiler automatically inserts calculated NOP (No-Operation) clock cycles between intense recursive passes, reducing the average heat generation. Considering immense base speed and intelligence gains, adding tiny delays is acceptable.
 
 ---
 
