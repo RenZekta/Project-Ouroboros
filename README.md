@@ -8,7 +8,7 @@ The project is named after the ancient symbol of the *Ouroboros* (the snake eati
 ---
 
 ## The Core Problem of Current Edge-AI
-Recent startups have demonstrated "Model-on-Silicon" technology, where AI models (like Llama 3.1 8B) are hardwired directly into the logic gates of an ASIC. While providing extreme speeds (15,000+ tokens/sec), this approach suffers from a **fundamental economic flaw**:
+Taalas have demonstrated "Model-on-Silicon" technology, where AI models (like Llama 3.1 8B) are hardwired directly into the logic gates of an ASIC. While providing extreme speeds (15,000+ tokens/sec), this approach suffers from a **fundamental economic flaw**:
 1. **Zero Flexibility:** The weights cannot be updated. When a better post-trained version or a new model architecture is released, the physical chip becomes obsolete. DeepSeek-v4-Flash is a perfect example of drastic model improvement without architectural changes.
 2. **Context Blindness:** Static chips lack the massive dynamic memory pools required for modern RAG (Retrieval-Augmented Generation) and complex reasoning agent frameworks.
 
