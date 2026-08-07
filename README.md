@@ -23,7 +23,7 @@ Project Ouroboros solves this by replacing permanent silicon pathways with **Rec
 ---
 
 ## The LAST-R Paradigm
-The core software-hardware interface of Project Ouroboros is **LAST-R** (**L**ayer-**A**ware **S**eparated **T**raining - **R**ecursive / *The LAST Architecture*). 
+The core software-hardware interface of Project Ouroboros is **LAST-R** (**L**ayer-**A**ware **S**eparated **T**raining - **R**ecursive / *The LAST aRchitecture*). 
 
 
 [ INCOMING ACTIVATION TOKEN ]  
