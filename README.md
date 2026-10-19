@@ -46,7 +46,7 @@ Each physical computational node contains a hardware "revolver cylinder" holding
 
 ### 2. Temporal Weight Multiplexing (Recursive)
 Instead of building a massive, expensive physical chips, Ouroboros can use a way smaller base model. Let's use the same Llama 3.1 8B as an example: to achieve the reasoning depth of a 70B model, the token signal is passed through the same 8B physical matrix 9 times with different weights each pass.
-On each pass, the shadow registers instantly flip to the next set of weights. We trade a fraction of our extreme speed to potentially get **a manyfold highier level of intelligence out of capacity of a cheap consumer chip**. With photonic multi-chip designs, way larger models can bu used as a base, massively increasing any model's intelligence potential with such setup, allowing now fast bigger models to multiply intelligence the same way.
+On each pass, the shadow registers instantly flip to the next set of weights. We trade a fraction of our extreme speed to potentially get **a manyfold highier level of intelligence out of capacity of a cheap consumer chip**. With photonic multi-chip designs, way larger models can be used as a base, massively increasing any model's intelligence potential with such setup, allowing now fast bigger models to multiply intelligence the same way.
 
 ### 3. Layer-Aware Training (LAT)
 To prevent the model from hallucinating during recursive loops, models must be trained using **Layer-Aware Training**. Each slot's weights in this use case are trained end-to-end to accept and stabilize the exact mathematical distribution output by the previous internal cycle pass.
